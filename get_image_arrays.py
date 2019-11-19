@@ -36,13 +36,13 @@ if __name__ == '__main__':
                                               header=True)
 
 
-    # train_folder = os.path.join(base_dir, 'train_images')
-    # train_folder_list = os.listdir(train_folder)[:num_training_samples]
-    # get_im_arr(train_folder, train_folder_list, 'train_data')
-    # calib_folder_list = os.listdir(train_folder)[-(num_calibration_samples + num_testing_samples):-num_testing_samples]
-    # get_im_arr(train_folder, calib_folder_list, 'calib_data')
-    # test_folder_list = os.listdir(train_folder)[-num_testing_samples:]
-    # get_im_arr(train_folder, test_folder_list, 'test_data')
+    train_folder = os.path.join(base_dir, 'train_images')
+    train_folder_list = os.listdir(train_folder)[:num_training_samples]
+    get_im_arr(train_folder, train_folder_list, 'train_data')
+    calib_folder_list = os.listdir(train_folder)[-(num_calibration_samples + num_testing_samples):-num_testing_samples]
+    get_im_arr(train_folder, calib_folder_list, 'calib_data')
+    test_folder_list = os.listdir(train_folder)[-num_testing_samples:]
+    get_im_arr(train_folder, test_folder_list, 'test_data')
     submit_folder = os.path.join(base_dir, 'test_images')
     submit_folder_list = os.listdir(submit_folder)
     get_im_arr(submit_folder, submit_folder_list, 'submit_data')
