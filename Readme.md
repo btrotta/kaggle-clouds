@@ -20,7 +20,7 @@ I worked with grayscale images shrunken to 25% of original size.
 I got a large boost in model accuracy from filtering out the over-exposed areas in the images. Below is a sample image
 before and after correction.
 
-![](https://github.com/btrotta/kaggle-clouds/tree/master/img/before_after.png "Images before and after correction")
+![](https://github.com/btrotta/kaggle-clouds/tree/master/img/before_after.png)
 
 I achieved this by identifying the local ``background colour`` of each part of the image. The image background is defined to
 be the part of the image with small variation in pixel intensity. The parts of the image that are over-exposed have lighter
@@ -36,7 +36,7 @@ I'm not sure whether it made any difference.
 
 Below is a visualisation of the steps in the correction process.
 
-![](https://github.com/btrotta/kaggle-clouds/tree/master/img/3_step.png "Images before and after correction")
+![](https://github.com/btrotta/kaggle-clouds/tree/master/img/3_step.png)
 
 
 ## Model
